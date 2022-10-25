@@ -18,6 +18,8 @@ export default function Portada({}: Props) {
     <div className="h-screen flex flex-col space-y-8 items-center justify-center
     text-center overflow-hidden">
          <AnimacionPortada1 />
+
+
         <h1>
             <span>{text}</span>
            <Cursor cursorColor="colores_app-four" />

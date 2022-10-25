@@ -6,7 +6,7 @@ type Props = {}
 
 export default function Header({}: Props) {
   return (
-    <header className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto
+    <header className="bg-colores_app-primary sticky top-10 p-5 flex items-start justify-between max-w-7xl mx-auto
     z-20 xl:items-center">
         {/* Retornamos nuestro Header y el Principal DIV contiene nuestros Iconos*/}
            <motion.div 
@@ -17,16 +17,16 @@ export default function Header({}: Props) {
             scale: 0.5,
            }}
            animate={{
-             x: [0, 450, 0],
+             x: [0, 500, 0],
              y: 0,
              opacity: 1,
              scale: 1,
             }}
             transition={{
-                duration: 2.0,
+                duration: 1.5,
             }}
            
-            className="flex flex-row items-center">
+            className="flex flex-row items-center ">
 
             <SocialIcon
             className="cursor-pointer"
@@ -59,13 +59,13 @@ export default function Header({}: Props) {
                 scale: 0.5,
                }}
                animate={{
-                 x: [0, -450, 0],
+                 x: [0, -500, 0],
                  y: 0,
                  opacity: 1,
                  scale: 1,
                 }}
                 transition={{
-                    duration: 2.0,
+                    duration: 1.5,
                 }}
             className=" flex flex-row items-center cursor-pointer">
 
@@ -75,8 +75,11 @@ export default function Header({}: Props) {
             fgColor="#00A8CC"
             bgColor="transparent"
             />
+
             <p className="uppercase hidden md:inline-flex text-sm text-colores_app-four">Contactar</p>
             </motion.div>
+
+            
     </header>
   )
 }
