@@ -25,14 +25,15 @@ const Home: NextPage = () => {
           duration: 1.0,
       }}
     
-    className="bg-colores_app-primary text-colores_app-four h-screen">
+    className="bg-colores_app-primary text-colores_app-four h-screen snap-mandatory overflow-scroll
+    z-0">
       <Head>
         <title>Ing. Luis Rivera Araya | XplenDev</title>
       </Head>
 
       <Header />
        
-       <section id="portada">
+       <section id="portada" className="snap-center">
        <Portada/>
        </section>
       

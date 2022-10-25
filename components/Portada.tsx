@@ -15,7 +15,8 @@ export default function Portada({}: Props) {
    });
 
   return (
-    <div>
+    <div className="h-screen flex flex-col space-y-8 items-center justify-center
+    text-center overflow-hidden">
          <AnimacionPortada1 />
         <h1>
             <span>{text}</span>
