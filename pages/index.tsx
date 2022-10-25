@@ -12,6 +12,7 @@ const Home: NextPage = () => {
 
       <h1 className="text-red-500">
           Wenacompare espero esto funcione porfavor
+          vamos a seguir editando a ver si podemos subir nuevamente a GitHub
         </h1>
     
     </div>
