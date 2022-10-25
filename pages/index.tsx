@@ -1,19 +1,43 @@
+import { motion } from 'framer-motion'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import Header from '../components/Header'
+import Portada from '../components/Portada'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <motion.div 
+    initial={{
+      x: -100,
+      y: 0,
+      opacity: 0,
+      scale: 0.5,
+     }}
+     animate={{
+       x: [0, 0, 0],
+       y: 0,
+       opacity: 1,
+       scale: 1,
+      }}
+      transition={{
+          duration: 1.0,
+      }}
+    
+    className="bg-colores_app-primary text-colores_app-four h-screen">
       <Head>
-        <title>Mi Titulocompare</title>
+        <title>Ing. Luis Rivera Araya | XplenDev</title>
       </Head>
 
       <Header />
+       
+       <section id="portada">
+       <Portada/>
+       </section>
+      
 
-    </div>
+    </motion.div>
   )
 }
 
